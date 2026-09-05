@@ -1,3 +1,4 @@
+// src/data/projects.js
 export const projects = [
   {
     id: "attijari-rag",
@@ -58,6 +59,33 @@ export const projects = [
     color: "violet",
   },
   {
+    id: "pizza-sales",
+    featured: true,
+    title: "Pizza Sales Analysis",
+    subtitle: "SQL Analysis & Power BI Dashboard",
+    type: "Data Analytics · SQL · Power BI",
+    description:
+      "Analyse complète des ventes d'une chaîne de pizzas : 12 requêtes SQL sur une année de transactions, 5 KPIs business, tendances temporelles et dashboard Power BI interactif.",
+    problem:
+      "Une chaîne de pizzas disposait d'un an de données de ventes sans visibilité sur ses performances.",
+    solution:
+      "Analyse SQL complète de la table pizza_sales, calcul de KPIs agrégés, étude des tendances temporelles, répartition des ventes par catégorie et taille, et classements Top/Bottom 5.",
+    highlights: [
+      "12 requêtes SQL couvrant 5 KPIs, tendances temporelles, répartitions et classements",
+      "Sous-requêtes scalaires pour calcul de % de contribution au CA",
+      "DATENAME() pour l'analyse temporelle",
+      "COUNT DISTINCT pour compter les commandes uniques",
+      "Double CAST DECIMAL pour précision de la division entière",
+      "TOP 5 / ASC pour les classements Best & Worst performers",
+      "Dashboard Power BI interactif avec slicers catégorie et taille",
+    ],
+    tech: ["SQL", "SQL Server", "Power BI", "Power Query", "DAX"],
+    period: "Projet Data Analyst",
+    github: null,
+    demo: null,
+    color: "emerald",
+  },
+  {
     id: "credit-scoring",
     featured: false,
     title: "Scoring Risque Bancaire",
@@ -73,7 +101,7 @@ export const projects = [
     period: "Projet académique",
     github: null,
     demo: null,
-    color: "emerald",
+    color: "amber",
   },
   {
     id: "sentiment",
@@ -91,7 +119,7 @@ export const projects = [
     period: "Projet académique",
     github: null,
     demo: null,
-    color: "amber",
+    color: "rose",
   },
   {
     id: "ocr",
@@ -109,7 +137,7 @@ export const projects = [
     period: "Projet académique",
     github: null,
     demo: null,
-    color: "rose",
+    color: "slate",
   },
   {
     id: "erp",
